@@ -34,11 +34,15 @@ The primary objective of this project is to:
 
 5. **Model Evaluation**
    - Performance is assessed using:
-     - Confusion matrix visualization.
      - Metrics: Accuracy, Precision, Recall, F1-Score.
+     - Confusion matrix visualization.
+       
+![Image](https://github.com/user-attachments/assets/2905e8f4-48f2-446d-a01c-b730159f6349)
 
 6. **Feature Importance Analysis**
    - Feature importance scores are calculated and visualized to identify the most impactful variables.
+
+![Image](https://github.com/user-attachments/assets/991b574e-a89a-4a58-ac79-fa54c4f1c6de)
 
 7. **Result Compilation**
    - Key results and metrics are compiled into a summary table or dataframe for reporting.
