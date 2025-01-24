@@ -47,26 +47,26 @@ The primary objective of this project is to:
 7. **Result Compilation**
    - Key results and metrics are compiled into a summary table or dataframe for reporting.
 <table align="center">
-<tr>
-  <th>MODEL</th>
-  <th>ACCURACY</th>
-  <th>PRECISION</th>
-  <th>RECALL</th>
-  <th>F1 SCORE</th>
-  <th>ROC-AUC</th>
-</tr>
-<tr>
-  <td>Random Forest Classifier</td>
-  <td align="center">90.0%</td>
-  <td align="center">83.0%</td>
-  <td align="center">5.0%</td>
-  <td align="center">10.0%</td>
-  <td align="center">53.0%</td>
-</tr>
+ <tr>
+    <th>MODEL</th>
+    <th>ACCURACY</th>
+    <th>PRECISION</th>
+    <th>RECALL</th>
+    <th>F1 SCORE</th>
+    <th>ROC-AUC</th>
+ </tr>
+ <tr>
+    <td>Random Forest Classifier</td>
+    <td align="center">90.0%</td>
+    <td align="center">83.0%</td>
+    <td align="center">5.0%</td>
+    <td align="center">10.0%</td>
+    <td align="center">53.0%</td>
+ </tr>
 </table>
 
 ---
 
 ## Results and Insights
-- **Model Performance**: The Random Forest Classifier achieves competitive results across accuracy, precision, recall, and F1-score.
+- **Model Performance**: The Random Forest Classifier achieves competitive results across accuracy and precision.
 - **Key Features**: Feature importance analysis highlights which variables significantly impact churn prediction.
