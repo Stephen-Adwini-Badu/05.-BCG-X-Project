@@ -36,8 +36,9 @@ The primary objective of this project is to:
    - Performance is assessed using:
      - Metrics: Accuracy, Precision, Recall, F1-Score.
      - Confusion matrix visualization.
+     - ROC-AUC and Calibration Curves
        
-![Image](https://github.com/user-attachments/assets/2905e8f4-48f2-446d-a01c-b730159f6349)
+![5 1](https://github.com/user-attachments/assets/f3f5f242-3e6e-4010-997c-9e2f9487dd0f)
 
 6. **Feature Importance Analysis**
    - Feature importance scores are calculated and visualized to identify the most impactful variables.
@@ -68,5 +69,5 @@ The primary objective of this project is to:
 ---
 
 ## Results and Insights
-- **Model Performance**: The Random Forest Classifier achieves competitive results across accuracy and precision.
+- **Model Performance**: The Random Forest Classifier achieves competitive results across accuracy and precision but is weak in recall and by extension F1 and ROC-AUC.
 - **Key Features**: Feature importance analysis highlights which variables significantly impact churn prediction.
