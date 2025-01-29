@@ -1,4 +1,4 @@
-# BCG X Project Notebook
+# BCG X Project
 
 ## Overview
 This notebook focuses on developing a **Random Forest Classifier** to predict **user churn** based on customer data. The project involves data exploration, feature engineering, model training, evaluation, and interpretation to build a reliable predictive model.
