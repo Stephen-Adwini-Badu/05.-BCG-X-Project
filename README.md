@@ -15,38 +15,33 @@ The primary objective of this project is to:
 
 ## Methodology
 
-1. **Importing Libraries**
+### 1. **Importing Libraries**
    - Essential Python libraries are imported for data manipulation, visualization, and predictive modeling, including
 
-2. **Data Loading and Exploration**
+### 2. **Data Loading and Exploration**
    - Customer data is loaded from `customer_data.csv`.
    - Exploratory Data Analysis (EDA) is conducted to:
      - Understand the dataset structure and statistics.
      - Identify and handle missing values or outliers if present.
 
-3. **Feature Engineering**
+### 3. **Feature Engineering**
    - Features (`X`) and the target variable (`y`) are defined.
    - Data is split into training and testing sets using an 80-20 split.
 
-4. **Model Training**
+### 4. **Model Training**
    - A Random Forest Classifier is defined and trained on the training data.
    - Default hyperparameters are used initially, with room for tuning in future iterations.
 
-5. **Model Evaluation**
-   - Performance is assessed using:
-     - Metrics: Accuracy, Precision, Recall, F1-Score.
-     - Confusion matrix visualization.
-     - ROC-AUC and Calibration Curves
-       
-![5 1](https://github.com/user-attachments/assets/f3f5f242-3e6e-4010-997c-9e2f9487dd0f)
+### 5. **Model Evaluation**
+   - **High Accuracy but Low Recall:**  
+     The model achieves a high accuracy of 90.0%, but has a very low recall of 5.0%. This indicates that the model is good at avoiding false positives but struggles to detect true positives.
 
-6. **Feature Importance Analysis**
-   - Feature importance scores are calculated and visualized to identify the most impactful variables.
+   - **Class Imbalance Issue:**   
+     The low recall value suggests that the dataset may be imbalanced, with a significant majority of negative instances.
 
-![Image](https://github.com/user-attachments/assets/991b574e-a89a-4a58-ac79-fa54c4f1c6de)
+   - **Low F1 Score and ROC AUC:**  
+     The F1 score (9.0%) and ROC AUC (52.0%) are both low, indicating that the model's performance is not well-balanced.
 
-7. **Result Compilation**
-   - Key results and metrics are compiled into a summary table or dataframe for reporting.
 <table align="center">
  <tr>
     <th>MODEL</th>
@@ -66,8 +61,17 @@ The primary objective of this project is to:
  </tr>
 </table>
 
----
+- **Confusion Matrix, ROC-AUC and Calibration Curves**
+    - The confusion matrix indicates that the Random Forest classifier has a high accuracy in predicting retained customers (90%) but struggles with predicting churned customers accurately (only 0.49%).
 
-## Results and Insights
-- **Model Performance**: The Random Forest Classifier achieves competitive results across accuracy and precision but is weak in recall and by extension F1 and ROC-AUC.
-- **Key Features**: Feature importance analysis highlights which variables significantly impact churn prediction.
+    - The ROC curve shows that the classifier's performance is close to random guessing, as indicated by the AUC of 0.52.
+
+    - The calibration curve suggests that the classifier's predicted probabilities are not well-calibrated, as the blue line deviates significantly from the perfect calibration line.
+
+ Overall, the Random Forest classifier does not perform well in predicting customer churn, as evidenced by the low AUC and poor calibration.
+
+![5 1](https://github.com/user-attachments/assets/f3f5f242-3e6e-4010-997c-9e2f9487dd0f)
+
+**Feature Importance**
+
+![Image](https://github.com/user-attachments/assets/991b574e-a89a-4a58-ac79-fa54c4f1c6de)
